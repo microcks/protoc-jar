@@ -2,15 +2,17 @@ protoc-jar
 ==========
 
 Protocol Buffers protobuf compiler - multi-platform executable protoc JAR and API.
-Available on Maven Central: https://repo.maven.apache.org/maven2/com/github/os72/protoc-jar/3.11.4/
+Available on Maven Central: https://repo.maven.apache.org/maven2/com/github/microcks/protoc-jar/3.21.8/
 
-[![Maven Central](https://img.shields.io/badge/maven%20central-3.11.4-brightgreen.svg)](http://search.maven.org/#artifactdetails|com.github.os72|protoc-jar|3.11.4|)
+[![Maven Central](https://img.shields.io/badge/maven%20central-3.21.8-brightgreen.svg)](http://search.maven.org/#artifactdetails|com.github.microcks|protoc-jar|3.21.8|)
 [![Join the chat at https://gitter.im/os72/community](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/os72/community)
+
+> This is a Microcks dedicated fork of the excellent https://gitter.im/os72/protoc-jar library. Our goal is to only embed the more recent versions of the library to allow support of Mac M1 architecture and reduce jar file size. This is not a drop-in replacement of the original `protoc-jar` lib!
 
 ---
 
 Simple convenience JAR that embeds protoc compiler binaries for Linux, Mac/OSX, and Windows, providing some portability across the major platforms. At runtime the library detects the platform and executes the corresponding protoc binary.
-Supports embedded protoc versions 2.4.1, 2.5.0, 2.6.1, 3.11.4, and any protoc version available for download from maven central
+Supports embedded protoc versions 3.21.8, and any protoc version available for download from maven central
 
 * Support for FreeBSD on x86 platform (freebsd-x86_64), thanks [kjopek](https://github.com/kjopek)
 * Support for Solaris on x86 platform (sunos-x86_64), thanks [siepkes](https://github.com/siepkes)
@@ -35,10 +37,7 @@ Binaries
 * https://oss.sonatype.org/content/repositories/snapshots/com/github/os72/protoc/
 
 Version support
-* protobuf 2.4.1: `-v2.4.1`
-* protobuf 2.5.0: `-v2.5.0`
-* protobuf 2.6.1: `-v2.6.1`
-* protobuf 3.11.4: `-v3.11.4`
+* protobuf 3.21.8: `-v3.21.8`
 * Other versions: will attempt download from maven central
 * Download by maven artifact id: `-v:<group>:<artifact>:<version>` (eg, `-v:com.google.protobuf:protoc:3.0.0`)
 
@@ -117,7 +116,7 @@ Detected platform: windows-x86_64 (windows 8.1/amd64)
 ```java
 import com.github.os72.protocjar.Protoc;
 ...
-String[] args = {"-v2.4.1", "--help"};
+String[] args = {"-v3.21.8", "--help"};
 Protoc.runProtoc(args);
 ```
 
@@ -125,8 +124,8 @@ Protoc.runProtoc(args);
 
 ```xml
 <dependency>
-  <groupId>com.github.os72</groupId>
+  <groupId>io.github.microcks</groupId>
   <artifactId>protoc-jar</artifactId>
-  <version>3.11.4</version>
+  <version>3.21.8</version>
 </dependency>
 ```

@@ -48,7 +48,7 @@ public class ProtocTest
 			assertEquals(0, Protoc.runProtoc(args));
 		}
 		{
-			String[] args = {"--version", "-v3.5.0-SNAPSHOT"}; // not embedded, should trigger download
+			String[] args = {"--version", "-v3.5.0"}; // not embedded, should trigger download
 			assertEquals(0, Protoc.runProtoc(args));
 		}
 	}
@@ -67,7 +67,7 @@ public class ProtocTest
 			assertEquals(0, Protoc.runProtoc(args));
 		}
 		{
-			String[] args = {"--version", "-v:com.github.os72:protoc:3.4.0-SNAPSHOT"};
+			String[] args = {"--version", "-v:com.github.os72:protoc:3.6.0-build2"};
 			assertEquals(0, Protoc.runProtoc(args));
 		}
 	}

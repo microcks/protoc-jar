@@ -11,7 +11,7 @@
     <dependencySet>
       <outputDirectory>/</outputDirectory>
       <useProjectArtifact>true</useProjectArtifact>
-	  <useTransitiveDependencies>false</useTransitiveDependencies>
+  	  <useTransitiveDependencies>false</useTransitiveDependencies>
       <unpack>true</unpack>
       <scope>runtime</scope>
     </dependencySet>
@@ -20,12 +20,14 @@
     <fileSet>
       <directory>bin</directory>
       <includes>
+        <!--
       	<include>2.*/*linux-x86_64*</include>
       	<include>2.*/*osx-x86_64*</include>
       	<include>2.*/*windows-x86_64*</include>
       	<include>3.11.4/*linux-x86_64*</include>
       	<include>3.11.4/*osx-x86_64*</include>
-      	<include>3.11.4/*windows-x86_64*</include>
+      	-->
+        <include>3.21.8/*linux-x86_64*</include>
       </includes>
     </fileSet>
   </fileSets>
