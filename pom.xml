@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.microcks</groupId>
   <artifactId>protoc-jar</artifactId>
   <packaging>jar</packaging>
-  <version>3.21.8-SNAPSHOT</version>
+  <version>3.21.8</version>
   <name>protoc-jar</name>
   <url>https://github.com/microcks/protoc-jar</url>
   <description>Protocol Buffers compiler - executable JAR and API</description>
@@ -34,7 +33,7 @@
     <connection>scm:git:https://github.com/microcks/protoc-jar.git</connection>
     <developerConnection>scm:git:https://github.com/microcks/protoc-jar.git</developerConnection>
     <url>http://github.com/microcks/protoc-jar/</url>
-    <tag>HEAD</tag>
+    <tag>3.21.8</tag>
   </scm>
 
   <distributionManagement>
