@@ -10,19 +10,19 @@
   <description>Protocol Buffers compiler - executable JAR and API</description>
 
   <licenses>
-	<license>
-	  <name>The Apache Software License, Version 2.0</name>
-	  <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-	  <distribution>repo</distribution>
-	</license>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
   </licenses>
 
   <developers>
-	<developer>
-	  <id>os72</id>
-	  <name>Oliver Suciu</name>
-	</developer>
-	<developer>
+    <developer>
+      <id>os72</id>
+      <name>Oliver Suciu</name>
+    </developer>
+    <developer>
       <id>microcks</id>
       <name>Microcks Development Team</name>
       <organizationUrl>https://microcks.io</organizationUrl>
